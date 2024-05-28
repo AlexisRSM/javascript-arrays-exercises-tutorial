@@ -8,7 +8,14 @@ let people = [
 
 let simplifier = function(person) {
 	// Your code here
-	return person.name;
+	let currentDate= new Date();
+	let age= currentDate.getFullYear() - person.birthDate.getFullYear();
+	birthdayCurrentYear= new Date(currentDate.getFullYear(),person.birthDate.getMonth(),person.birthDate.getDay())
+	if (currentDate < birthdayCurrentYear) {
+		age = age - 1;
+	  }
+  
+	  return "Hello, my name is " + person.name + " and I am " + age + " years old";
 };
 
 console.log(people.map(simplifier));

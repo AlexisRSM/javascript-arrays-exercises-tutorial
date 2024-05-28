@@ -10,6 +10,7 @@ let allColors = [
 
 function generateLI(color) {
 	// Your code here
+	return allColors.
 }
 
 function filterColors(color) {

@@ -10,3 +10,10 @@ let tasks = [
 ];
 
 // Your code here
+let newArray=tasks.filter((task)=>{
+  if(task.done){
+    return task;
+  }
+});
+
+console.log(newArray);

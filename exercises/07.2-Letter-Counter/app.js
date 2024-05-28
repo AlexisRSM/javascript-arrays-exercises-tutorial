@@ -2,5 +2,7 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // Your code here
-
-console.log(counts);
+for(let i=0;i<par.length;i++){
+    counts[i].par[i]=i;
+}
+    console.log(counts);
